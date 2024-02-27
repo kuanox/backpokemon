@@ -7,10 +7,10 @@ import com.modyo.pokemon.dto.impl.PokemonSpeciesDto;
 
 public interface IPokemonService {
 
-    public PokemonBaseDto getAllPokemons(String limit, String offset);
-    public PokemonDto getInfoPokemonByName(String  pokemonName);
-    public EvolutionChainDto getInfoEvolutionById(Integer pokemonId);
-    public PokemonSpeciesDto getInfoSpecieById(Integer pokemonId);
-    public EvolutionChainDto getInfoEvolutionByUrlEvolution(String evolutionUrl);
+    PokemonBaseDto getAllPokemons(String limit, String offset);
+    PokemonDto getInfoPokemonByName(String  pokemonName);
+    EvolutionChainDto getInfoEvolutionById(Integer pokemonId);
+    PokemonSpeciesDto getInfoSpecieById(Integer pokemonId);
+    EvolutionChainDto getInfoEvolutionByUrlEvolution(String evolutionUrl);
 
 }
